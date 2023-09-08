@@ -6,11 +6,13 @@ import Contact from './screens/Contact';
 import Support from './screens/Support';
 import Employee from './screens/Employee';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './screens/Header';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='home' element={<Home/>}/>
