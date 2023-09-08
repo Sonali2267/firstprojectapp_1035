@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div>
+    
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,7 +27,7 @@ function Header() {
     </div>
   </div>
 </nav>
-    </div>
+
   )
 }
 
