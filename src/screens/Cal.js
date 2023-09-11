@@ -19,6 +19,17 @@ function Cal() {
     const sumClick=()=>{
         setResult(Number(number1)+Number(number2));
     }
+    const mulClick=()=>{
+        setResult(Number(number1)*Number(number2));
+    }
+     const divClick=()=>{
+        setResult(Number(number1)/Number(number2));
+    }
+    const clearRec=()=>{
+        setNumber1(0);
+        setNumber2(0);
+        setResult(0);
+    }
   return (
     <div>
         <b>Enter First Number:</b>
@@ -29,9 +40,9 @@ function Cal() {
         <br/>
         <b>Result:</b>{result}<br/>
         <button onClick={sumClick} className='btn btn-info m-1'>Sum</button>
-        <button className='btn btn-success m-1'>Mul</button>
-        <button className='btn btn-primary m-1'>Div</button>
-        <button className='btn btn-danger'>Clear</button>
+        <button onClick={mulClick} className='btn btn-success m-1'>Mul</button>
+        <button onClick={divClick} className='btn btn-primary m-1'>Div</button>
+        <button onClick={clearRec} className='btn btn-danger'>Clear</button>
     </div>
   )
 }
