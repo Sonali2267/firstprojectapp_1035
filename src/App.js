@@ -7,6 +7,7 @@ import Support from './screens/Support';
 import Employee from './screens/Employee';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './screens/Header';
+import Cal from './screens/Cal';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='contact' element={<Contact/>}/>
         <Route path='support' element={<Support/>}/>
         <Route path='employee' element={<Employee/>}/>
+        <Route path='cal' element={<Cal/>}/>
       </Routes>
       </BrowserRouter>
      {/* <Home/>
