@@ -25,6 +25,9 @@ function Header() {
         </li>
         <li class="nav-item">
           <Link to="/cal" className='nav-link'>Cal</Link>
+        </li> 
+        <li class="nav-item">
+          <Link to="/cal1" className='nav-link'>Cal1</Link>
         </li>
       </ul>
     </div>
