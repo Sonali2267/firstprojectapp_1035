@@ -6,12 +6,17 @@ function Cal1() {
         num1:0,
         num2:0,
         res:0,
-    })
+    });
+
+    const changeHandler=(event)=>{
+        setData({...data,[event.target.name]:Number(event.target.value)});
+        console.log(data);
+    };
   return (
     <div>
         <b>Enter First Number:</b>
-        <input type='number' name='num1'/><br/>
-        <input type='number' name='num2'/><br/>
+        <input type='number' name='num1' onChange={changeHandler}/><br/>
+        <input type='number' name='num2' onChange={changeHandler}/><br/>
         <b>Result:</b><br/>
         <button className='btn btn-info'>Sum</button>
         <button className='btn btn-primary'>Mul</button>
