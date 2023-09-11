@@ -34,7 +34,7 @@ function Cal1() {
         <button onClick={sumClick} className='btn btn-info'>Sum</button>
         <button onClick={mulClick} className='btn btn-primary'>Mul</button>
         <button onClick={divClick} className='btn btn-success'>Div</button>
-        <button onClick={clearclick} className='btn btn-danger'>Clear</button>
+        <button onClick={clearClick} className='btn btn-danger'>Clear</button>
     </div>
   )
 }
