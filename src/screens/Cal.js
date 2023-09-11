@@ -13,7 +13,11 @@ function Cal() {
         else{
             setNumber2(event.target.value);
         }
-        console.log(number1);
+        //console.log(number1);
+    };
+
+    const sumClick=()=>{
+        setResult(Number(number1)+Number(number2));
     }
   return (
     <div>
@@ -24,9 +28,9 @@ function Cal() {
         <input type='number'name='num2'onChange={changeHandler}/>
         <br/>
         <b>Result:</b><br/>
-        <button className='btn btn-info'>Sum</button>
-        <button className='btn btn-success'>Mul</button>
-        <button className='btn btn-primary'>Div</button>
+        <button onClick={sumClick} className='btn btn-info m-1'>Sum</button>
+        <button className='btn btn-success m-1'>Mul</button>
+        <button className='btn btn-primary m-1'>Div</button>
         <button className='btn btn-danger'>Clear</button>
     </div>
   )
