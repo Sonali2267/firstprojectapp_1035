@@ -33,10 +33,10 @@ function Cal() {
   return (
     <div>
         <b>Enter First Number:</b>
-        <input type='number'name='num1'onChange={changeHandler}/>
+        <input value={number1} type='number'name='num1'onChange={changeHandler}/>
         <br/>
         <b>Enter Second Number:</b>
-        <input type='number'name='num2'onChange={changeHandler}/>
+        <input value={number2} type='number'name='num2'onChange={changeHandler}/>
         <br/>
         <b>Result:</b>{result}<br/>
         <button onClick={sumClick} className='btn btn-info m-1'>Sum</button>
