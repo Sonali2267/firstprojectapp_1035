@@ -27,7 +27,7 @@ function Cal() {
         <b>Enter Second Number:</b>
         <input type='number'name='num2'onChange={changeHandler}/>
         <br/>
-        <b>Result:</b><br/>
+        <b>Result:</b>{result}<br/>
         <button onClick={sumClick} className='btn btn-info m-1'>Sum</button>
         <button className='btn btn-success m-1'>Mul</button>
         <button className='btn btn-primary m-1'>Div</button>
